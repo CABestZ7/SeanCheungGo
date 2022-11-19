@@ -254,4 +254,26 @@
 
 	});
 
+	// showAndHide.
+	var $showHide = $('.showHide'),
+		$showHide_openers = $showHide.find('.opener');
+
+	// Openers.
+	$showHide_openers.each(function () {
+
+		var $this = $(this);
+
+		$this.on('click', function (event) {
+
+			// Prevent default.
+			event.preventDefault();
+
+			// Toggle.
+			$showHide_openers.not($this).removeClass('active');
+			$this.toggleClass('active');
+			
+		});
+
+	});
+
 })(jQuery);

@@ -1,0 +1,40 @@
+.showHide span {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.showHide span:hover {
+    color: #f56a6a;
+}
+
+.showHide span.opener {
+    -moz-transition: color 0.2s ease-in-out;
+    -webkit-transition: color 0.2s ease-in-out;
+    -ms-transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    position: relative;
+}
+
+.showHide span.opener:before {
+    -moz-transition: color 0.2s ease-in-out, -moz-transform 0.2s ease-in-out;
+        -webkit-transition: color 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+        -ms-transition: color 0.2s ease-in-out, -ms-transform 0.2s ease-in-out;
+        transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+        color: #9fa3a6;
+}
+
+.showHide span.opener:hover:before{
+    color: #f56a6a;
+}
+
+.showHide span.opener.active + div {
+    display:block;
+}
+
+.showHide > div {
+    display: none;
+}
