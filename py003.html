@@ -46,7 +46,7 @@
                             </a>
                         </blockquote>
                         <h1>Python Notes</h1>
-                        <h2>编辑与运行</h2>
+                        <h2>变量 Variables</h2>
                     </header>
 
                     <p>本笔记册主要为个人笔记电子化的成果，部分来自他人（皆已注明来源），仅限个人线上观看，如需使用，
@@ -55,93 +55,128 @@
 
                     <hr class="major" />
 
-                    <h2>一个不那么实用的实用方法</h2>
-                    <p>在安装了python与VScode之后，以下方法可以对部分代码进行执行测试：</p>
+                    <h2>创建变量 Creating Variables</h2>
+                    <p>变量时一种用来储存数据值的容器。
+                        跟其他编程语言不同，python没有用来声明变量的命令，只有首次为其赋值时，才会创建变量。<br />
+                        同时，python变量不需要使用任何特定类型声明，甚至于可以在变量被创建之后更改其类型。</p>
                     <blockquote>
-                        使用vscode写代码，同时打开python的交互式命令窗口
-                            <strong>在写代码的过程中，将部分代码粘贴到命令行去验证</strong>
+                        python是一种动态语言，即一种变量本身类型不固定，相应的是静态语言，即在定义变量时需同时指定变量类型
                     </blockquote>
-                    <h2>输入与输出 IO</h2>
+                    <pre><code class="language-python">x = &#39;beautiful&#39;
+y = &#39;good&#39;
+</code></pre>
                     <blockquote>
-                        任何计算机程序都是为了执行一个特定的任务，有了输入，用户才能告诉计算机程序所需的信息，有了输出，程序运行后才能告诉用户任务的结果。
-                            根据输入的不同，输出的结果也会不同。
+                        <code>=</code> 与 <code>==</code> 是不同的，前者是赋值语句，后者是等值判断。
                     </blockquote>
-                    <p>输入(input)与输出(output)被统称为input/output(IO)。
-                        <code>print()</code>与 <code>input()</code> 是在命令行下进行最基本的输入和输出。
-                    </p>
-                    <h4>输出 Output</h4>
-                    <pre><code class="language-python">print(&#39;hello, world!&#39;)
-print(&#39;asas&#39;,&#39;sadfd&#39;,&#39;dfas&#39;)
-# output: asas sadfd dfas
-print(300)
-print(100 + 200) 
-print(&quot;100 + 200 =&quot;, 100 + 200)
-# output: 100 + 200 = 300
-</code></pre>
+                    <h4>变量名称 Variable Names</h4>
                     <ul>
-                        <li><code>print()</code> 表示在屏幕上输出指定的文字，但它并不会自动换行</li>
-                        <li><code>&#39;xx&#39;</code>与 <code>&#39;&#39;xx&#39;&#39;</code> 都可以用来表示字符串</li>
-                        <li><code>,</code> 可以将多个字符串分隔开，而它的输出结果是一个空格</li>
-                        <li><code>print()</code> 也可以直接打印整数或者进行有效的数学计算</li>
-                    </ul>
-                    <h4>输入 Input</h4>
-                    <ul>
-                        <li>变量 Variable
-                            <p>变量之中储存了一定的内容，在计算机程序中，变量不仅可以为整数或浮点数，还可以是字符串，因此，<code>name</code>作为一个变量就是一个字符串。
-                                <code>print()</code> 输出结果，相应的，<code>input()</code> 可以让用户从电脑中输入一些字符
-                            </p>
-                        </li>
-                    </ul>
-                    <pre><code class="language-python">name = input() # 将input()存放到一个变量中，且打下这行代码且按下回车后，对本文件进行运行，便可在终端中进行输入了
-print(name) # 调用name这个变量，进行输出
-# input: sean
-# output: sean
-</code></pre>
-
-                    <h2>语法组织 Syntax</h2>
-                    <p>如：</p>
-                    <pre><code class="language-python">num = 10
-if a &gt;= 10:
-    print(a)
-else:
-    print(-a)
-</code></pre>
-                    <ul>
-                        <li>python使用缩进来组织代码块。<ul>
-                                <li>关于缩进
-                                    <p>
-                                        一般约定俗成为<strong>4个空格</strong>，如果习惯使用Tab，应将Tab设置为4空格地缩进。
-                                        同时，缩进导致“复制-粘贴”功能失效，当重构代码时，粘贴过去的代码必须重新检查缩进是否正确。</p>
-                                </li>
-                                <li>关于代码块
-                                    <p>每一行都是一个语句，当语句以 <code>:</code> 结尾时，缩进的语句被视为代码块。</p>
-                                </li>
-                                <li>补充
-                                    <p>python是大小写敏感的。<br />python语句结束不需添加 <code>;</code> 以表示本语句结束。</p>
-                                </li>
+                        <li>命名规则<ul>
+                                <li>变量名必须以字母或下划线字符开头</li>
+                                <li>变量名称不能以数字开头</li>
+                                <li>变量名只能包含字母数字字符和下划线（A-z、0-9 和_）</li>
+                                <li>Case-Sensitive：区分大小写</li>
                             </ul>
                         </li>
-                    </ul>
-
-                    <h2>注释 Comment</h2>
-                    <pre><code class="language-python"># 我们使用#来进行单行注释
-&quot;&quot;&quot;
-同时可以上下同时使用三个&quot;来进行多行注释
-&quot;&quot;&quot;
-</code></pre>
-                    <ul>
-                        <li>作用<ol>
-                                <li>解释python代码</li>
-                                <li>增强代码可读性</li>
-                                <li>当测试代码时阻止被注释语句执行</li>
+                        <li>一些命名形式<ol>
+                                <li>Camel Case： <code>aVariableName = &#39;tim&#39;</code></li>
+                                <li>Pascal Case： <code>MyVariableName = &#39;tim&#39;</code></li>
+                                <li>Snake Case： <code>my_variable_name = &#39;tim&#39;</code></li>
                             </ol>
                         </li>
                     </ul>
+                    <h4>多变量赋值</h4>
+                    <pre><code class="language-python">x, y, z = &quot;A&quot;, &quot;B&quot;, &quot;C&quot;
+# 以上为多变量赋不同值 Many Values to Multiple Variables
+# 按照顺序进行多变量赋值
+x, y, z = &quot;A&quot;
+# 以上为多变量赋单一值 One Value to Multiple Variables
+fruits = [&#39;a&#39;,&#39;b&#39;,&#39;c&#39;]
+x, y, z = fruits
+# 以上是针对列表、元组进行解包分析
+</code></pre>
+                    <h4>将变量赋值给变量</h4>
+                    <p>此处需要理解变量在内存之中的表示，如 <code>x = &quot;apple&quot;</code>，此处python解释器干了两件事：</p>
+                    <ol>
+                        <li>在内存中创建一个 <code>apple</code> 的字符串</li>
+                        <li>在内存中创建一个名为 <code>x</code> 的变量，并将它指向 <code>apple</code>
+                            而当将变量赋值给变量时：</li>
+                    </ol>
+                    <pre><code class="language-python">1| a = &#39;A&#39;
+2| b = a
+3| a = &#39;APPLE&#39;
+4| print(b) # output: &#39;A&#39;
+</code></pre>
+                    <p>为什么此处的输出是A呢？</p>
+                    <ol>
+                        <li>执行line1时，解释器创建字符串 <code>&#39;A&#39;</code> 和变量 <code>a</code> ，并将 <code>a</code> 指向
+                            <code>A</code></li>
+                        <li>执行line2时，解释器创建变量 <code>b</code> ，并将 <code>b</code> 指向 <code>a</code> 指向的字符串
+                            <code>&#39;A&#39;</code></li>
+                        <li>执行line3时，解释器创建字符串 <code>&#39;APPLE&#39;</code> ，并将 <code>a</code> 指向新的字符串 <code>APPLE</code>
+                            ，但 <code>b</code> 并没有更改</li>
+                    </ol>
+                    <h4>全局变量与局部变量 Global Variables &amp; Local
+                        Variables</h4>
+                    <ul>
+                        <li>全局变量 Global Variables：
+                            <p>在函数外部创建的变量，内外部都可以使用。<br />
+                                <strong>global关键字</strong>：在函数内部创建或更改全局变量。
+                            </p>
+                        </li>
+                        <li>局部变量 Local Variables：
+                            <p> 在函数内部创建的变量，只能在内部使用，使用时不影响该函数外部的变量。<br />
+                                倘如在内部创建一个与全局变量同名的变量，全局变量在该函数内的值将被覆盖。</p>
+                        </li>
+                    </ul>
+                    <pre><code class="language-python">x, y = &quot;apple&quot;
+print(x, y) # output: apple apple
+def newFunc():
+    x = &quot;peach&quot;
+    print(x)
+newFunc() # output: peach
+print(x) # output: apple
+def secFunc():
+    global y
+    y = &quot;banana&quot;
+secFunc()
+print(y) # output: banana
+</code></pre>
+                    <h2>获取变量类型 Get the Type</h2>
+                    <p>使用 <code>type()</code> 方法</p>
+                    <pre><code class="language-python">x = 1
+print(type(x)) # output: int
+</code></pre>
+                    <h2>Casting</h2>
+                    <p>当需要为变量指定类型时，可以通过casting来完成，casting时使用构造函数来完成转换：</p>
+                    <ul>
+                        <li><code>int()</code>
+                            用整数字面量、浮点字面量构造整数（通过对数进行下舍入），或者用表示完整数字的字符串字面量</li>
+                    </ul>
+                    <pre><code class="language-python">x = int(1) # x == 1
+y = int(2.8) # y == 2
+z = int(&quot;3&quot;) # z == 3
+</code></pre>
+                    <ul>
+                        <li><code>float()</code>
+                            用整数字面量、浮点字面量，或字符串字面量构造浮点数（提供表示浮点数或整数的字符串）</li>
+                    </ul>
+                    <pre><code class="language-python">x = float(1) # x == 1.0
+y = float(1.5) # y == 1.5
+z = float(&quot;3&quot;) # z == 3.0
+</code></pre>
+                    <ul>
+                        <li><code>str()</code>
+                            用各种数据类型构造字符串，包括字符串，整数字面量和浮点字面量</li>
+                    </ul>
+                    <pre><code class="language-python">x = str(&quot;s1&quot;) # x == &quot;s1&quot;
+y = str(2) # y == &quot;2&quot;
+z = str(3.0) # z == &quot;3.0&quot;
+</code></pre>
 
                     <ul class="pagination-self">
-                        <li><a href="py001.html" class="button">Prev</a></li>
+                        <li><a href="py002.html" class="button">Prev</a></li>
                         <li><a href="nbPython.html" class="button primary">Content</a></li>
-                        <li><a href="py003.html" class="button">Next</a></li>
+                        <li><a href="py004.html" class="button">Next</a></li>
                     </ul>
 
             </div>
