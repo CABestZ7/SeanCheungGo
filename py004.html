@@ -1,0 +1,307 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>Notebooks - PythonNotes</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets\css\nbShowandHide.css" />
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
+
+                <!-- Header -->
+                <header id="header">
+                    <a href="index.html" class="logo"><strong>Notebooks - SC's Workspace</strong> by Sean Cheung</a>
+                    <ul class="icons">
+                        <li><a href="https://twitter.com/PechanUea" class="icon brands fa-twitter"><span
+                                    class="label">Twitter</span></a></li>
+                        <li><a href="https://connect.facebook.com" class="icon brands fa-facebook-f"><span
+                                    class="label">Facebook</span></a></li>
+                        <li><a href="https://www.snapchat.com" class="icon brands fa-snapchat-ghost"><span
+                                    class="label">Snapchat</span></a>
+                        </li>
+                        <li><a href="http://instagram.com/" class="icon brands fa-instagram"><span
+                                    class="label">Instagram</span></a></li>
+                        <li><a href="https://www.medium.com" class="icon brands fa-medium-m"><span
+                                    class="label">Medium</span></a></li>
+                    </ul>
+                </header>
+
+                <!-- Content -->
+                <section>
+                    <header class="main">
+                        <blockquote>
+                            <a href="notebooks.html" class="logo">
+                                <strong>Click me to back to SeanCheung's Notebooks Category.</strong>
+                            </a>
+                        </blockquote>
+                        <h1>Python Notes</h1>
+                        <h2>数据类型 Data Types</h2>
+                    </header>
+
+                    <p>本笔记册主要为个人笔记电子化的成果，部分来自他人（皆已注明来源），仅限个人线上观看，如需使用，
+                        请联系本人。<br>
+                    </p>
+
+                    <hr class="major" />
+
+                    <p>计算机可以处理数据，变量也可以储存数据，数据有不同类型，不同类型的数据可以执行不同的操作。</p>
+                    <h2>内置数据类型 Built-in Data Types</h2>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Including</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>文本类型 Text Type</td>
+                                    <td><code>str</code></td>
+                                </tr>
+                                <tr>
+                                    <td>数值类型 Numeric Types</td>
+                                    <td><code>int</code>,<code>float</code>,<code>complex</code></td>
+                                </tr>
+                                <tr>
+                                    <td>序列类型 Sequence Types</td>
+                                    <td><code>list</code>,<code>tuple</code>,<code>range</code></td>
+                                </tr>
+                                <tr>
+                                    <td>映射类型 Mapping Type</td>
+                                    <td><code>dict</code></td>
+                                </tr>
+                                <tr>
+                                    <td>集合类型 Set Types</td>
+                                    <td><code>set</code>,<code>frozenset</code></td>
+                                </tr>
+                                <tr>
+                                    <td>布尔类型 Boolean Type</td>
+                                    <td><code>bool</code></td>
+                                </tr>
+                                <tr>
+                                    <td>二进制类型 Binary Types</td>
+                                    <td><code>bytes</code>,<code>bytearray</code>,<code>memoryview</code></td>
+                                </tr>
+                                <tr>.
+                                    <td>None Type</td>
+                                    <td><code>NoneType</code></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <h2>设置数据类型 Set the Data Types</h2>
+                    <p>Setting：当为变量赋值时，其赋值格式会自动为变量设置数据类型。<br/>
+                    Casting：如想要设定特定的数据类型，需要使用构造函数来进行指定casting。</p>
+                    <div class="table-wrapper"></div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Data Type</th>
+                                <th>E.g. of Setting</th>
+                                <th>E.g. of Casting</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>str</td>
+                                <td><code>x = "Hello World"</code></td>
+                                <td><code>x = str("Hello World")</code></td>
+                            </tr>
+                            <tr>
+                                <td>int</td>
+                                <td><code>x = 20</code></td>
+                                <td><code>x = int(20)</code></td>
+                            </tr>
+                            <tr>
+                                <td>float</td>
+                                <td><code>x = 20.5</code></td>
+                                <td><code>x = float(20.5)</code></td>
+                            </tr>
+                            <tr>
+                                <td>complex</td>
+                                <td><code>x = 1j</code></td>
+                                <td><code>x = complex(1j)</code></td>
+                            </tr>
+                            <tr>
+                                <td>list</td>
+                                <td><code>x = ["apple", "banana", "cherry"]</code></td>
+                                <td><code>x = list(("apple", "banana", "cherry"))</code></td>
+                            </tr>
+                            <tr>
+                                <td>tuple</td>
+                                <td><code>x = ("apple", "banana", "cherry")</code></td>
+                                <td><code>x = tuple(("apple", "banana", "cherry"))</code></td>
+                            </tr>
+                            <tr>
+                                <td>range</td>
+                                <td><code>x = range(6)</code></td>
+                                <td><code>x = range(6)</code></td>
+                            </tr>
+                            <tr>
+                                <td>dict</td>
+                                <td><code>x = {"name" : "John", "age" : 36}</code></td>
+                                <td><code>x = dict(name="John", age=36)</code></td>
+                            </tr>
+                            <tr>
+                                <td>set</td>
+                                <td><code>x = {"apple", "banana", "cherry"}</code></td>
+                                <td><code>x = set(("apple", "banana", "cherry"))</code></td>
+                            </tr>
+                            <tr>
+                                <td>frozenset</td>
+                                <td><code>x = frozenset({"apple", "banana", "cherry"})</code></td>
+                                <td><code>x = frozenset(("apple", "banana", "cherry"))</code></td>
+                            </tr>
+                            <tr>
+                                <td>bool</td>
+                                <td><code>x = True</code></td>
+                                <td><code>x = bool(5)</code></td>
+                            </tr>
+                            <tr>
+                                <td>bytes</td>
+                                <td><code>x = b"Hello"</code></td>
+                                <td><code>x = bytes(5)</code></td>
+                            </tr>
+                            <tr>
+                                <td>bytearray/td>
+                                <td><code>x = bytearray(5)</code></td>
+                                <td><code>x = bytearray(5)</code></td>
+                            </tr>
+                            <tr>
+                                <td>memoryview</td>
+                                <td><code>x = memoryview(bytes(5))</code></td>
+                                <td><code>x = memoryview(bytes(5))</code></td>
+                            </tr>
+                            <tr>
+                                <td>NoneType</td>
+                                <td><code>x = None</code></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <ul class="pagination-self">
+                        <li><a href="py003.html" class="button">Prev</a></li>
+                        <li><a href="nbPython.html" class="button primary">Content</a></li>
+                        <li><a href="py005.html" class="button">Next</a></li>
+                    </ul>
+
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div id="sidebar">
+            <div class="inner">
+
+                <!-- Search -->
+                <section id="search" class="alt">
+                    <form method="post" action="#">
+                        <input type="text" name="query" id="query" placeholder="想找些什么" />
+                    </form>
+                </section>
+
+                <!-- Menu -->
+                <nav id="menu">
+                    <header class="major">
+                        <h2>Menu</h2>
+                    </header>
+                    <ul>
+                        <li><a href="index.html">首页 Homepage</a></li>
+                        <li><a href="AboutMe.html">简介 About Me</a></li>
+                        <li>
+                            <span class="opener">工具 Tools</span>
+                            <ul>
+                                <li><a href="library.html">图书库 | Library</a></li>
+                                <li><a href="shortcutsCollection.html">网址库 | Shortcuts Collection</a></li>
+                                <li><a href="notebooks.html">笔记册 | Sean's Notebooks</a></li>
+                                <li><a href="elements.html">测试区 | Test Area</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">云件 Cloud Files</a></li>
+                        <li><a href="#">交流 Communicating</a></li>
+                        <!-- <li>
+										<span class="opener">Another Submenu</span>
+										<ul>
+											<li><a href="#">Lorem Dolor</a></li>
+											<li><a href="#">Ipsum Adipiscing</a></li>
+											<li><a href="#">Tempus Magna</a></li>
+											<li><a href="#">Feugiat Veroeros</a></li>
+										</ul>
+									</li> -->
+                        <li><a href="#">留言 Say Something</a></li>
+                        <li><a href="#">收藏 Collections</a></li>
+                        <li><a href="#">动态 Moments</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Section -->
+                <section>
+                    <header class="major">
+                        <h2>推荐 Recommandation</h2>
+                    </header>
+                    <div class="mini-posts">
+                        <article>
+                            <a href="nbJjxtzyl.html" class="image"><img src="images\pic07_1.jpg" alt="pic07_1" /></a>
+                            <p>经济学扩展专题原理期末复习资料。</p>
+                        </article>
+                        <article>
+                            <a href="nbPython.html" class="image"><img src="images/pic01_1.jpg" alt="pic01_1" /></a>
+                            <p>python基础语法知识及数据分析常用库知识笔记。</p>
+                        </article>
+                        <article>
+                            <a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
+                            <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+                        </article>
+                    </div>
+                    <ul class="actions">
+                        <li><a href="#" class="button">Find More</a></li>
+                    </ul>
+                </section>
+
+                <!-- Section -->
+                <section>
+                    <header class="major">
+                        <h2>联系我 Contact Me</h2>
+                    </header>
+                    <p>本网站遵循中国人民共和国法律，全部内容由作者张书影（Sean Cheung）本人原创所有，如有雷同，纯属巧合，交流请关注如下联系方式：</p>
+                    <ul class="contact">
+                        <li class="icon solid fa-envelope">2418110153@qq.com<br />uea328833@gmail.com</li>
+                        <li class="icon solid fa-phone">15220286090</li>
+                        <li class="icon solid fa-home">Dreaming for my dizzling future.<br />
+                            Sincerely ready for one more sweet dreams.</li>
+                    </ul>
+                </section>
+
+                <!-- Footer -->
+
+                <footer id="footer">
+                    <p class="copyright">&copy; 张书影(Sean Cheung). All rights reserved. Demo Images: <a
+                            href="https://unsplash.com">Unsplash</a>. Original Design: <a
+                            href="https://html5up.net">HTML5
+                            UP</a>.</p>
+                </footer>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

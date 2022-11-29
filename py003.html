@@ -109,9 +109,11 @@ x, y, z = fruits
                     <p>为什么此处的输出是A呢？</p>
                     <ol>
                         <li>执行line1时，解释器创建字符串 <code>&#39;A&#39;</code> 和变量 <code>a</code> ，并将 <code>a</code> 指向
-                            <code>A</code></li>
+                            <code>A</code>
+                        </li>
                         <li>执行line2时，解释器创建变量 <code>b</code> ，并将 <code>b</code> 指向 <code>a</code> 指向的字符串
-                            <code>&#39;A&#39;</code></li>
+                            <code>&#39;A&#39;</code>
+                        </li>
                         <li>执行line3时，解释器创建字符串 <code>&#39;APPLE&#39;</code> ，并将 <code>a</code> 指向新的字符串 <code>APPLE</code>
                             ，但 <code>b</code> 并没有更改</li>
                     </ol>
@@ -172,6 +174,14 @@ z = float(&quot;3&quot;) # z == 3.0
 y = str(2) # y == &quot;2&quot;
 z = str(3.0) # z == &quot;3.0&quot;
 </code></pre>
+                    <h2>常量 Constants</h2>
+                    <p>常量实际上也是一种变量，创建一个变量，将变量指向一个固定的不再需要更改的数据值，即常量。
+                        <br/><strong>常量常命名为全大写</strong>，如 <code>PI = 3.1415926</code>
+                    </p>
+                    <blockquote>
+                    事实上，python中也没有一个数据类型为常量的，因此并没有任何手段去限制这个常量不被改变。
+                    </blockquote>
+
 
                     <ul class="pagination-self">
                         <li><a href="py002.html" class="button">Prev</a></li>
