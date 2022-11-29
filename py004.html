@@ -55,7 +55,9 @@
 
                     <hr class="major" />
 
-                    <p>计算机可以处理数据，变量也可以储存数据，数据有不同类型，不同类型的数据可以执行不同的操作。</p>
+                    <p>计算机可以处理数据，变量也可以储存数据，数据有不同类型，不同类型的数据可以执行不同的操作。<br />
+                        数据类型可以看作是一个类，每一种数据类型都是一个对象，都具有自己的属性与方法。<br />
+                        验证数据类型可以使用<code>type()</code>方法。</p>
                     <h2>内置数据类型 Built-in Data Types</h2>
                     <div class="table-wrapper">
                         <table>
@@ -102,8 +104,8 @@
                         </table>
                     </div>
                     <h2>设置数据类型 Set the Data Types</h2>
-                    <p>Setting：当为变量赋值时，其赋值格式会自动为变量设置数据类型。<br/>
-                    Casting：如想要设定特定的数据类型，需要使用构造函数来进行指定casting。</p>
+                    <p>Setting：当为变量赋值时，其赋值格式会自动为变量设置数据类型。<br />
+                        Casting：如想要设定特定的数据类型，需要使用构造函数来进行指定casting。</p>
                     <div class="table-wrapper"></div>
                     <table>
                         <thead>
@@ -175,7 +177,7 @@
                                 <td><code>x = bytes(5)</code></td>
                             </tr>
                             <tr>
-                                <td>bytearray/td>
+                                <td>bytearray</td>
                                 <td><code>x = bytearray(5)</code></td>
                                 <td><code>x = bytearray(5)</code></td>
                             </tr>
@@ -190,6 +192,36 @@
                             </tr>
                         </tbody>
                     </table>
+                    <h2 id="数值-number">数值 Number</h2>
+                    <p>数值主要包含三种类型：</p>
+                    <ol>
+                        <li><code>int</code> 整数<br/>
+                            整数是完整的数字，正数或负数，没有小数，长度不限。</li>
+                        <li><code>float</code> 浮点数<br/>
+                            浮动或&quot;浮点数&quot;是包含小数的正数或负数。
+                            浮点数也可以是带有&quot;e&quot;的科学数字，表示 10 的幂。</li>
+                        <li><code>complex</code> 复数<br/>
+                            复数用 &quot;j&quot; 作为虚部编写，如 <code>x=3+5j</code>。</li>
+                    </ol>
+
+                    <h4>类型转换 Type Conversion</h4>
+                    <p>可以通过构造函数实现三种类型之间的转换，但要注意的是，复数无法被转换为其他数字类型。</p>
+                    <pre><code class="language-python">
+x = 2.0
+a = int(x)
+b = complex(x)
+print(a) # out: 2
+print(b) # out: 2+0j
+                    </code></pre>
+                    <h4>随机数 Random Number</h4>
+                    <p>Python 没有 <code>random()</code> 函数来创建随机数，但 Python 有一个名为 <code>random</code> 的内置模块，可用于生成随机数：</p>
+                    <pre><code class="language-python">
+import random # 导入模块random
+print(random.randrange(1,10)) # 打印一到九之间的随机数
+# out: 8 
+                    </code></pre>
+
+
                     <ul class="pagination-self">
                         <li><a href="py003.html" class="button">Prev</a></li>
                         <li><a href="nbPython.html" class="button primary">Content</a></li>
