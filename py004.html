@@ -195,14 +195,27 @@
                     <h2 id="数值-number">数值 Number</h2>
                     <p>数值主要包含三种类型：</p>
                     <ol>
-                        <li><code>int</code> 整数<br/>
-                            整数是完整的数字，正数或负数，没有小数，长度不限。</li>
-                        <li><code>float</code> 浮点数<br/>
-                            浮动或&quot;浮点数&quot;是包含小数的正数或负数。
-                            浮点数也可以是带有&quot;e&quot;的科学数字，表示 10 的幂。</li>
-                        <li><code>complex</code> 复数<br/>
+                        <li><code>int</code> 整数<ul>
+                                <li>整数是完整的数字，正数或负数，没有小数，长度不限。</li>
+                                <li>python可以处理十六进制，有时使用十六进制表示整数比较方便，十六进制用<code>0x</code>前缀和0-9，a-f表示，例如：<code>0xff00</code>，<code>0xa5b4c3d2</code>，等等。
+                                </li>
+                                <li>对于很大的数，例如<code>10000000000</code>，很难数清楚0的个数。Python允许在数字中间以<code>_</code>分隔，因此，写成<code>10_000_000_000</code>和<code>10000000000</code>是完全一样的。十六进制数也可以写成<code>0xa1b2_c3d4</code>。
+                                </li>
+                            </ul>
+                        </li>
+                        <li><code>float</code> 浮点数<ul>
+                                <li>浮动或&quot;浮点数&quot;是包含小数的正数或负数。</li>
+                                <li>浮点数也可以是带有&quot;e&quot;的科学数字，表示 10
+                                    的幂，把10用e替代，1.23x109就是<code>1.23e9</code>，或者<code>12.3e8</code>，0.000012可以写成<code>1.2e-5</code>，等等。
+                                </li>
+                            </ul>
+                        </li>
+                        <li><code>complex</code> 复数
                             复数用 &quot;j&quot; 作为虚部编写，如 <code>x=3+5j</code>。</li>
                     </ol>
+                    <blockquote>
+                        整数和浮点数在计算机内部存储的方式是不同的，整数运算永远是精确的，而浮点数运算则可能会有四舍五入的误差。
+                    </blockquote>
 
                     <h4>类型转换 Type Conversion</h4>
                     <p>可以通过构造函数实现三种类型之间的转换，但要注意的是，复数无法被转换为其他数字类型。</p>
@@ -290,10 +303,10 @@ print(random.randrange(1,10)) # 打印一到九之间的随机数
                             <a href="nbPython.html" class="image"><img src="images/pic01_1.jpg" alt="pic01_1" /></a>
                             <p>python基础语法知识及数据分析常用库知识笔记。</p>
                         </article>
-                        <article>
-                            <a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
-                            <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-                        </article>
+						<article>
+							<a href="nbJava.html" class="image"><img src="images/pic08_1.jpg" alt="pic08_1" /></a>
+							<p>Java笔记。</p>
+						</article>
                     </div>
                     <ul class="actions">
                         <li><a href="#" class="button">Find More</a></li>

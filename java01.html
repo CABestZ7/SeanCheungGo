@@ -3,7 +3,7 @@
 <html>
 
 <head>
-    <title>Notebooks - PythonNotes</title>
+    <title>Notebooks - JavaNotes</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
@@ -45,8 +45,8 @@
                                 <strong>Click me to back to SeanCheung's Notebooks Category.</strong>
                             </a>
                         </blockquote>
-                        <h1>Python Notes</h1>
-                        <h2>简介</h2>
+                        <h1>Java Notes</h1>
+                        <h2>Introduction 简介</h2>
                     </header>
 
                     <p>本笔记册主要为个人笔记电子化的成果，部分来自他人（皆已注明来源），仅限个人线上观看，如需使用，
@@ -55,45 +55,85 @@
 
                     <hr class="major" />
 
-                    <h2>开发者 Developer</h2>
-                    <p><strong>Guide van Rossum</strong></p>
-                    <h2>特点 Features</h2>
-<p>一门面向对象编程语言，几乎所有都是对象，拥有属性和方法。<br/>
-它使用类来定义数据类型，包括自身原始数据类型。</p>
-                    <h2>优劣势 A/D</h2>
-                    <h4><strong>优势 Advantages</strong></h4>
-                    <ul>
-                        <li>Python是一门适合编写应用程序的高级编程语言。</li>
-                        <li>提供十分完善的基础代码库，&quot;batteries included&quot;:
-                            网络、文件、GUI、数据库、文本等<ul>
-                                <li>以及大量第三方库供直接使用</li>
-                            </ul>
-                        </li>
-                        <li>适用性 Applications<ul>
-                                <li>网络应用，包括网站、后台服务等</li>
-                                <li>许多日常需要的小工具，包括系统管理员需要的脚本任务等</li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <h4><strong>劣势 Disadvantages</strong></h4>
-                    <ul>
-                        <li>运行速度慢
-                            <blockquote>
-                                原因：Python是解释型语言，你的代码在执行时会一行一行地翻译成CPU能理解的机器码，这个翻译过程非常耗时，所以很慢。而C程序是运行前直接编译成CPU能执行的机器码，所以非常快。
-                            </blockquote>
-                        </li>
-                        <li>代码无法加密
-                            <blockquote>
-                                由于python为解释型语言，因此在发布python程序时，发布的是源代码而非编译后的机器码（即xxx.exe文件）
-                            </blockquote>
-                        </li>
-                    </ul>
+                    <h3>Directory 快捷通道</h3>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Index 索引</th>
+                                    <th>Title 标题</th>
+                                    <th>Position 定位</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Computational Thinking 计算思维</td>
+                                    <td><button class="button primary small">Jump</button></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>What & Why Java</td>
+                                    <td><button class="button primary small">Jump</button></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>OOP Concepts Java中的OOP概念</td>
+                                    <td><button class="button primary small">Jump</button></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>JDK/JVM/JRE</td>
+                                    <td><button class="button primary small">Jump</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <hr class="major">
+                    <h3 id="computational-thinking-计算思维">Computational Thinking 计算思维</h3>
+                    <p>计算机的基本结构首先是需要了解的，在当下的时代我们有许多种类的计算机，比如说：台式电脑（Desktop）、笔记本（Laptop）、平板电脑（Tablet）等等，他们的大小和基本功能不太一样，但他们的基本架构是差不多相同的。
+                    </p>
+                    <h4 id="计算机结构">计算机结构</h4>
+                    <p>他们都有CPU（Central Processing Unit）、RAM（Random Access Memory）和存储，即Storage（包括硬盘和内存卡），而这些就被称为计算机结构。
+                    </p>
+                    <p>那么这个结构到底是怎么样的呢？就不得不提到计算机结构模型，插一句，现代计算机其实又被称为<strong>冯·诺依曼结构计算机</strong>，是的，当代计算机就是以冯·诺依曼结构为基础设计的，回归原题，这个结构就被成为冯·诺依曼结构。
+                    </p>
+                    <h4 id="冯·诺依曼结构（the-von-neumann-model）">冯·诺依曼结构（The Von Neumann Model）</h4>
+                    <pre><code class="language-ascii">
+                        ┌─────────────────────────────────┐
+                        │                                 │
+                        │ ┌─────────────────────────────┐ │
+                        │ │                             │ │
+                        │ │   Central Processing Unit   │ │
+                        │ │                             │ │
+                        │ │                             │ │
+                        │ │ ┌─────────────────────────┐ │ │
+                        │ │ │      Control Unit       │ │ │
+                        │ │ └─────────────────────────┘ │ │
+                        │ │                             │ │
+                        │ │ ┌─────────────────────────┐ │ │
+        ┌─────────┐     │ │ │ Arithemetic/Logic Unit  │ │ │     ┌──────────┐
+        │  Input  ├────►│ │ └─────────────────────────┘ │ ├────►│  Output  │
+        └─────────┘     │ │                             │ │     └──────────┘
+                        │ └───────────┬────▲────────────┘ │
+                        │             │    │              │
+                        │             │    │              │
+                        │   ┌─────────▼────┴──────────┐   │
+                        │   │                         │   │
+                        │   │      Memory Unit        │   │
+                        │   │                         │   │
+                        │   └─────────────────────────┘   │
+                        │                                 │
+                        └─────────────────────────────────┘
+        </code></pre>
+        
 
                     <ul class="pagination-self">
-                            <li><span class="button disabled">Prev</span></li>
-                            <li><a href="nbPython.html" class="button primary">Content</a></li>
-                            <li><a href="py002.html" class="button">Next</a></li>
-                        </ul>
+                        <li><span class="button disabled">Prev 前页</span></li>
+                        <li><a href="nbJava.html" class="button primary">Content 目录</a></li>
+                        <li><a href="java02.html" class="button">Next 次页</a></li>
+                    </ul>
 
             </div>
         </div>
@@ -157,13 +197,13 @@
                             <a href="nbPython.html" class="image"><img src="images/pic01_1.jpg" alt="pic01_1" /></a>
                             <p>python基础语法知识及数据分析常用库知识笔记。</p>
                         </article>
-						<article>
-							<a href="nbJava.html" class="image"><img src="images/pic08_1.jpg" alt="pic08_1" /></a>
-							<p>Java笔记。</p>
-						</article>
+                        <article>
+                            <a href="nbJava.html" class="image"><img src="images/pic08_1.jpg" alt="pic08_1" /></a>
+                            <p>Java笔记。</p>
+                        </article>
                     </div>
                     <ul class="actions">
-                        <li><a href="#" class="button">Find More</a></li>
+                        <li><a href="notebooks.html" class="button">Find More</a></li>
                     </ul>
                 </section>
 
