@@ -69,22 +69,23 @@
                                 <tr>
                                     <td>1</td>
                                     <td>Computational Thinking 计算思维</td>
-                                    <td><button class="button primary small">Jump</button></td>
+                                    <td><a href="#computational-thinking-计算思维" class="button primary small">Jump</a>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
                                     <td>What & Why Java</td>
-                                    <td><button class="button primary small">Jump</button></td>
+                                    <td><a href="#what--why-java" class="button primary small">Jump</a></td>
                                 </tr>
                                 <tr>
                                     <td>3</td>
                                     <td>OOP Concepts Java中的OOP概念</td>
-                                    <td><button class="button primary small">Jump</button></td>
+                                    <td><a href="#" class="button primary small">Jump</a></td>
                                 </tr>
                                 <tr>
                                     <td>4</td>
                                     <td>JDK/JVM/JRE</td>
-                                    <td><button class="button primary small">Jump</button></td>
+                                    <td><a href="#" class="button primary small">Jump</a></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -97,37 +98,66 @@
                     <h4 id="计算机结构">计算机结构</h4>
                     <p>他们都有CPU（Central Processing Unit）、RAM（Random Access Memory）和存储，即Storage（包括硬盘和内存卡），而这些就被称为计算机结构。
                     </p>
-                    <p>那么这个结构到底是怎么样的呢？就不得不提到计算机结构模型，插一句，现代计算机其实又被称为<strong>冯·诺依曼结构计算机</strong>，是的，当代计算机就是以冯·诺依曼结构为基础设计的，回归原题，这个结构就被成为冯·诺依曼结构。
+                    <p>那么这个结构到底是怎么样的呢？就不得不提到计算机结构模型，插一句，现代计算机其实又被称为<strong>冯·诺依曼结构计算机</strong>，是的，当代计算机就是以冯·诺依曼结构为基础设计的，
+                        回归原题，计算机结构实际上遍被称为冯·诺依曼结构。
                     </p>
                     <h4 id="冯·诺依曼结构（the-von-neumann-model）">冯·诺依曼结构（The Von Neumann Model）</h4>
-                    <pre><code class="language-ascii">
-                        ┌─────────────────────────────────┐
-                        │                                 │
-                        │ ┌─────────────────────────────┐ │
-                        │ │                             │ │
-                        │ │   Central Processing Unit   │ │
-                        │ │                             │ │
-                        │ │                             │ │
-                        │ │ ┌─────────────────────────┐ │ │
-                        │ │ │      Control Unit       │ │ │
-                        │ │ └─────────────────────────┘ │ │
-                        │ │                             │ │
-                        │ │ ┌─────────────────────────┐ │ │
-        ┌─────────┐     │ │ │ Arithemetic/Logic Unit  │ │ │     ┌──────────┐
-        │  Input  ├────►│ │ └─────────────────────────┘ │ ├────►│  Output  │
-        └─────────┘     │ │                             │ │     └──────────┘
-                        │ └───────────┬────▲────────────┘ │
-                        │             │    │              │
-                        │             │    │              │
-                        │   ┌─────────▼────┴──────────┐   │
-                        │   │                         │   │
-                        │   │      Memory Unit        │   │
-                        │   │                         │   │
-                        │   └─────────────────────────┘   │
-                        │                                 │
-                        └─────────────────────────────────┘
-        </code></pre>
-        
+                    <img src="images/nbJava/0101.png" alt="machine architecture.jpg" />
+                    <ul>
+                        <li>中间那个巨大的长方形是计算机本身：<ul>
+                                <li>每个计算机都有一个CPU，其中包含又一个控制单元（Control Unit）和一个算数逻辑单元（ALU，即，Arithmetic Logic
+                                    Unit)，而最下面有一个<strong>内存单元（Memory Unit）</strong>，它是用来存储数据和指令的。<ul>
+                                        <li><strong>控制单元（Control Unit）</strong>：管理程序和应用如何运行的，它分配系统资源，并在系统组件之间进行协调。</li>
+                                        <li><strong>算术逻辑单元（ALU）</strong>：一个处理数据的“大型计算器”。<blockquote>
+                                                形象一点，如果将CPU比作一个大家族，那么控制单元就是一个这个家族的大管家，算术逻辑单元勉强可以算作这个家族的幕僚，是诸葛亮型人物。
+                                            </blockquote>
+                                        </li>
+                                        <li><strong>内存单元（Memory Unit）</strong>
+                                            会与CPU进行数据和指令的交换，也就是他们之间的箭头。通常而言，内存单元指的是RAM（随机存取存储器），暂时存储一些临时程序和数据。</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>我们通过输入设备（Input）将数据和指令输入计算机，比如摄像机、扫描仪、键盘、写字板等。</li>
+                        <li>在处理数据时，计算机可以在输出设备（Output）上显示结果或执行一些其他任务，而输出设备是用来接收计算机数据的输出的，比如显示器、打印机、绘图仪、扬声器等等。</li>
+                    </ul>
+
+                    <h3 id="what--why-java">What &amp; Why Java</h3>
+                    <h4 id="java是什么">Java是什么</h4>
+                    <p><strong>Java是一门面向对象的编程语言</strong>，开发者为James Gosling（詹姆斯·高斯林）。</p>
+                    <ul>
+                        <li>Java特点：<strong>面向对象编程（OOP）：Object-Oriented Programming</strong></li>
+                    </ul>
+                    <p>Java作为一门超受欢迎的编程语言，本身是由Sun微系统公司研发的，刚开始Java还不叫Java叫做Oak，只不过后来Oracle收购了Sun。目前Java由Oracle对Java语言进行更新维护。
+                        Java之所以受欢迎，有一点非常吸引人：</p>
+                    <ul>
+                        <li>Java特点：<strong>平台独立性（Platform Independence）</strong>
+                            <ul>
+                                <li>这意味着，Java语言可以在许多地方，从电脑端到移动端皆可运行，而不需要像其他编程语言一样还需要对代码进行修改。<blockquote>
+                                        Java生态：火星车（Mars rover）、手机（Cell phones）、蓝光光盘（blu-ray disc）、网站服务端（Web
+                                            server）、超级计算机（Supercomputing）
+                                    </blockquote>
+                                </li>
+                                <li>这也就产生了一个说法，<em>写就写一次，我到处运行（Write Once, Run Everywhere）</em>。</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h4 id="java的优势所在（advantages）">Java的优势所在（Advantages）</h4>
+                    <ol>
+                        <li>Higher cross- functionality and portability （更高的跨功能和可移植性）
+                               <blockquote>写就写一次，我到处运行。</blockquote> 
+                        </li>
+                        <li>OOP, distributed, supports multithreading, offers multimedia and network support
+                            （面向对象的、分布式的、支持多线程的、支持多媒体和网络的）</li>
+                        <li>mature, therefore more stable and predictable（一门成熟的语言，因此更加稳定和可预测）</li>
+                        <li>large active user community and support available（拥有大量活跃的用户社区和可用的支持）</li>
+                        <li>Java programs are compiled independent of platform
+                            in bytecode language（Java程序是用字节码语言独立于平台进行编译的-<strong>平台独立性</strong>）<blockquote>
+                                这种语言允许相同的程序在任何安装了JVM的机器上运行(run on any machine that has a JVM installed)</blockquote>
+                        </li>
+                        <li>tons of frameworks（java有大量框架）</li>
+                    </ol>
+
 
                     <ul class="pagination-self">
                         <li><span class="button disabled">Prev 前页</span></li>
