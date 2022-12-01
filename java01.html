@@ -80,19 +80,19 @@
                                 <tr>
                                     <td>3</td>
                                     <td>OOP Concepts Java中的OOP概念</td>
-                                    <td><a href="#" class="button primary small">Jump</a></td>
+                                    <td><a href="#oop-concepts-java中的oop概念" class="button primary small">Jump</a></td>
                                 </tr>
                                 <tr>
                                     <td>4</td>
                                     <td>JDK/JVM/JRE</td>
-                                    <td><a href="#" class="button primary small">Jump</a></td>
+                                    <td><a href="#jdkjvmjre" class="button primary small">Jump</a></td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
 
                     <hr class="major">
-                    <h3 id="computational-thinking-计算思维">Computational Thinking 计算思维</h3>
+                    <h2 id="computational-thinking-计算思维">Computational Thinking 计算思维</h2>
                     <p>计算机的基本结构首先是需要了解的，在当下的时代我们有许多种类的计算机，比如说：台式电脑（Desktop）、笔记本（Laptop）、平板电脑（Tablet）等等，他们的大小和基本功能不太一样，但他们的基本架构是差不多相同的。
                     </p>
                     <h4 id="计算机结构">计算机结构</h4>
@@ -122,7 +122,7 @@
                         <li>在处理数据时，计算机可以在输出设备（Output）上显示结果或执行一些其他任务，而输出设备是用来接收计算机数据的输出的，比如显示器、打印机、绘图仪、扬声器等等。</li>
                     </ul>
 
-                    <h3 id="what--why-java">What &amp; Why Java</h3>
+                    <h2 id="what--why-java">What &amp; Why Java</h2>
                     <h4 id="java是什么">Java是什么</h4>
                     <p><strong>Java是一门面向对象的编程语言</strong>，开发者为James Gosling（詹姆斯·高斯林）。</p>
                     <ul>
@@ -135,7 +135,7 @@
                             <ul>
                                 <li>这意味着，Java语言可以在许多地方，从电脑端到移动端皆可运行，而不需要像其他编程语言一样还需要对代码进行修改。<blockquote>
                                         Java生态：火星车（Mars rover）、手机（Cell phones）、蓝光光盘（blu-ray disc）、网站服务端（Web
-                                            server）、超级计算机（Supercomputing）
+                                        server）、超级计算机（Supercomputing）
                                     </blockquote>
                                 </li>
                                 <li>这也就产生了一个说法，<em>写就写一次，我到处运行（Write Once, Run Everywhere）</em>。</li>
@@ -145,7 +145,7 @@
                     <h4 id="java的优势所在（advantages）">Java的优势所在（Advantages）</h4>
                     <ol>
                         <li>Higher cross- functionality and portability （更高的跨功能和可移植性）
-                               <blockquote>写就写一次，我到处运行。</blockquote> 
+                            <blockquote>写就写一次，我到处运行。</blockquote>
                         </li>
                         <li>OOP, distributed, supports multithreading, offers multimedia and network support
                             （面向对象的、分布式的、支持多线程的、支持多媒体和网络的）</li>
@@ -157,7 +157,122 @@
                         </li>
                         <li>tons of frameworks（java有大量框架）</li>
                     </ol>
-
+                    <h2 id="oop-concepts-java中的oop概念">OOP Concepts Java中的OOP概念</h2>
+                    <img src="images/nbJava/0102.png" alt="OOPs.png">
+                    <ul>
+                        <li>首先要明确的是<strong>OOP指的是Object-Oriented
+                                Programming（面对对象编程）</strong>，上述这张图便是OOP的概念体系图，那么这张图上面单词都是是什么意思呢？<ul>
+                                <li>object 对象</li>
+                                <li>class 类</li>
+                                <li>inheritance 继承</li>
+                                <li>polymorphism 多态性</li>
+                                <li>abstraction 抽象</li>
+                                <li>encapsulation 封装
+                                    面向对象编程（OOP）的主要目的是实现真实世界的东西，例如对象、类、抽象、继承、多态等。
+                                    OOP是一种范式或者说一套方法论，使用类和对象来设计程序，他提供了以上6个概念以简化程序开发和维护的过程。
+                                    接下来针对这六个概念简单解释：</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h4 id="object-对象">Object 对象</h4>
+                    <ul>
+                        <li>对象这个概念是从现实世界抽象过来的，凡是有状态（state）和行为（behavior）的东西都被称为<strong>对象（object）</strong>。
+                            <blockquote>
+                                比如一只修猫咪就是一个对象，它有名字、颜色等状态，还有吃东西、犯傻等行为。<br/>
+                                <img src="images/nbJava/eg0101.jpg" alt="cat.jpg" style="width:30%;height:30%">
+                            </blockquote>
+                        </li>
+                    </ul>
+                    <p>OK然后我们回到编程中来，对象（object）可以定义为一例类（Class）。
+                        既然对象要被使用，那么它就需要被定位，因此对象包含一个地址来明确它的位置，并在内存中占用一些空间。
+                        对象可以在不知道彼此数据或代码细节的情况下进行通信，可以接收信息和返回响应，就像是两个人可以发微信也可以在QQ上匿名聊天。</p>
+                    <h4 id="class-类">Class 类</h4>
+                    <ul>
+                        <li>对象（Object）的集合被称为<strong>类（Class）</strong>，比如一群狗，比如有高个的在狗叫的狗、有肥肥的躺在地上的狗，他们被集合在一起，就被称为一类狗。
+                            <br/><img src="images/nbJava/eg0102.png" alt="cat.jpg" style="width:30%;height:30%">
+                            <blockquote>
+                                类在内存中不占据空间。
+                            </blockquote>
+                        </li>
+                    </ul>
+                    <h4 id="inheritance-继承">Inheritance 继承</h4>
+                    <p>我们什么时候会提到继承呢？Yes，继承家产，我们继承家产的时候是从父辈身上继承的。</p>
+                    <ul>
+                        <li>同理我们在编程中也有父对象、子对象的概念，当一个对象（这个时候它属于一个子对象 Child Object）获得了父对象（Parent
+                            Object）的所有家产，也就是父对象的所有属性（state）和行为（behavior）时，这种状况便被称为<strong>继承（inheritance）</strong>。
+                            <blockquote>
+                                实际上继承时指的是一个对象基于另一个对象构建，被继承的类被称为超类（superclass），继承的类被称为子类（subclass）。
+                            </blockquote>
+                        </li>
+                    </ul>
+                    <p>继承可以减少一些重复的代码，让代码变得具有可复用性（resuability），它被用来实现运行时多态性（polymorphism）。</p>
+                    <h4 id="polymorphism-多态性">Polymorphism 多态性</h4>
+                    <p>这个词听起来非常高大上，但解释起来也很简单。</p>
+                    <ul>
+                        <li>如果一个任务以不同的方式执行，就称之为<strong>多态性（polymorphism）</strong>。例如，用不同的方式说服客户；画一些东西，例如形状，三角形，矩形等。
+                            <br/><img src="images/nbJava/eg0103.png" alt="cat.jpg" style="width:30%;height:30%">
+                            <blockquote>
+                                在Java中，我们通过方法重载（method overloading）和方法覆盖（method overriding）来实现多态性。
+                                    补充一下，方法（method）指的是你对对象（object）做的操作。
+                            </blockquote>
+                        </li>
+                    </ul>
+                    <p>另一个例子是说话，人说人话，猫说猫话，狗说狗话等等，这些也是多态。</p>
+                    <h4 id="abstraction-抽象">Abstraction 抽象</h4>
+                    <p>我们每天都会打电话，但我们不知道内部是如何处理通话/通信的，因为电话很抽象，电话内部细节和它的功能如何运作都被隐藏起来了，我们只需要会使用电话就行，这可比了解它的原理简单多了。</p>
+                    <ul>
+                        <li>由此，我们可以知道，隐藏内部细节和显示功能称为<strong>抽象（abstraction）</strong>，抽象意味着用简单的东西来表示复杂，在Java中，抽象是指用对象（object）、类（class）和变量（variable）等简单的东西表示更复杂的底层代码和数据。
+                            <blockquote>
+                                在Java里，我们使用抽象类（abstract class）和接口（interface）来实现抽象。
+                            </blockquote>
+                        </li>
+                    </ul>
+                    <h4 id="encapsulation-封装">Encapsulation 封装</h4>
+                    <p>吃药的时候，我们经常会吃一种胶囊，胶囊里面包裹着不同的药物，这就是封装。</p>
+                    <img src="images/nbJava/0103.png" alt="capsule.png">
+                    <ul>
+                        <li>相似地，我们将代码和数据包装在一起，成为一个单元（或者说放一个胶囊里），这个行为就是<strong>封装（encapsulation）</strong>。</li>
+                    </ul>
+                    <p>想想之上我们是不是说过，对象（object）的集合是类（class），一个java类就是封装的一个很好的例子。</p>
+                    <blockquote>
+                        封装是用于在面向对象编程中实现抽象的技术。封装用于对类成员和方法的访问限制。
+                    </blockquote>
+                    <ul>
+                        <li>封装可以视作一种保护手段，就像是胶囊要把药物包裹起来不让药物倾泄和接触外界一样，封装将类中的数据私有化，保证类本身数据和代码的安全，然后我们只能通过公共方法（public
+                            methods）来访问他们。</li>
+                    </ul>
+                    <h4 id="补充的一些概念">补充的一些概念</h4>
+                    <p>除了以上六个概念之外，还有一些是会经常在面向对象设计中使用到的：</p>
+                    <ul>
+                        <li>Coupling 耦合</li>
+                        <li>Cohesion 内聚</li>
+                        <li>Association 关联</li>
+                        <li>Aggregation 聚合</li>
+                        <li>Composition 组合</li>
+                    </ul>
+                    <h2 id="jdkjvmjre">JDK/JVM/JRE</h2>
+                    <ul>
+                        <li><strong>JDK（Java Development Kit Java开发包）</strong>
+                            <ul>
+                                <li>Java开发包是Java环境的核心组件，提供编译、调试和执行Java程序所需的所有工具、可执行文件和二进制文件。</li>
+                            </ul>
+                        </li>
+                        <li><strong>JVM（Java Virtual Machine Java虚拟机）</strong>
+                            <ul>
+                                <li>Java虚拟机是Java编程语言的核心。运行Java程序时，JVM负责将字节码转换为特定于机器的代码。JVM依赖于平台，提供了内存管理、垃圾回收、安全等java核心功能。
+                                </li>
+                            </ul>
+                        </li>
+                        <li><strong>JRE（Java Runtime Environment Java运行环境）</strong>
+                            <ul>
+                                <li>Java运行环境是JVM的实现。它提供了一个执行java程序的平台。JRE由JVM、java二进制文件和其他类组成，可以成功地执行任何java程序。</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h4 id="三者关系">三者关系</h4>
+                    <p>大致看看即可。</p>
+                    <img src="images/nbJava/0104.png" alt="relationship between the three.jpg">
+                    <br/><br><br>
 
                     <ul class="pagination-self">
                         <li><span class="button disabled">Prev 前页</span></li>
