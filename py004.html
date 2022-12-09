@@ -6,6 +6,7 @@
     <title>Notebooks - PythonNotes</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="icon" type="image/x-icon" href="icon\favicon_2.ico">
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets\css\nbShowandHide.css" />
 </head>
@@ -219,21 +220,18 @@
 
                     <h4>类型转换 Type Conversion</h4>
                     <p>可以通过构造函数实现三种类型之间的转换，但要注意的是，复数无法被转换为其他数字类型。</p>
-                    <pre><code class="language-python">
-x = 2.0
-a = int(x)
-b = complex(x)
-print(a) # out: 2
-print(b) # out: 2+0j
-                    </code></pre>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=zenburn&wt=none&l=python&width=800&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=10px&ph=18px&ln=true&fl=1&fm=Hack&fs=14px&lh=147%25&si=false&es=2x&wm=false&code=x%2520%253D%25202.0%250Aa%2520%253D%2520int%28x%29%250Ab%2520%253D%2520complex%28x%29%250Aprint%28a%29%2520%2523%2520out%253A%25202%250Aprint%28b%29%2520%2523%2520out%253A%25202%252B0j"
+                        style="width: 800px; height: 182px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
                     <h4>随机数 Random Number</h4>
                     <p>Python 没有 <code>random()</code> 函数来创建随机数，但 Python 有一个名为 <code>random</code> 的内置模块，可用于生成随机数：</p>
-                    <pre><code class="language-python">
-import random # 导入模块random
-print(random.randrange(1,10)) # 打印一到九之间的随机数
-# out: 8 
-                    </code></pre>
-
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=zenburn&wt=none&l=python&width=800&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=10px&ph=18px&ln=true&fl=1&fm=Hack&fs=14px&lh=147%25&si=false&es=2x&wm=false&code=import%2520random%2520%2523%2520%25E5%25AF%25BC%25E5%2585%25A5%25E6%25A8%25A1%25E5%259D%2597random%250Aprint%28random.randrange%281%252C10%29%29%2520%2523%2520%25E6%2589%2593%25E5%258D%25B0%25E4%25B8%2580%25E5%2588%25B0%25E4%25B9%259D%25E4%25B9%258B%25E9%2597%25B4%25E7%259A%2584%25E9%259A%258F%25E6%259C%25BA%25E6%2595%25B0%250A%2523%2520out%253A%25208%2520"
+                        style="width: 800px; height: 141px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
 
                     <ul class="pagination-self">
                         <li><a href="py003.html" class="button">Prev</a></li>
@@ -303,10 +301,10 @@ print(random.randrange(1,10)) # 打印一到九之间的随机数
                             <a href="nbPython.html" class="image"><img src="images/pic01_1.jpg" alt="pic01_1" /></a>
                             <p>python基础语法知识及数据分析常用库知识笔记。</p>
                         </article>
-						<article>
-							<a href="nbJava.html" class="image"><img src="images/pic08_1.jpg" alt="pic08_1" /></a>
-							<p>Java笔记。</p>
-						</article>
+                        <article>
+                            <a href="nbJava.html" class="image"><img src="images/pic08_1.jpg" alt="pic08_1" /></a>
+                            <p>Java笔记。</p>
+                        </article>
                     </div>
                     <ul class="actions">
                         <li><a href="#" class="button">Find More</a></li>

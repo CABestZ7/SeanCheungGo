@@ -7,6 +7,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="icon" type="image/x-icon" href="icon\favicon_2.ico">
     <link rel="stylesheet" href="assets\css\nbShowandHide.css" />
 </head>
 
@@ -59,25 +60,22 @@
                     <p>在安装了python与VScode之后，以下方法可以对部分代码进行执行测试：</p>
                     <blockquote>
                         使用vscode写代码，同时打开python的交互式命令窗口
-                            <strong>在写代码的过程中，将部分代码粘贴到命令行去验证</strong>
+                        <strong>在写代码的过程中，将部分代码粘贴到命令行去验证</strong>
                     </blockquote>
                     <h2>输入与输出 IO</h2>
                     <blockquote>
                         任何计算机程序都是为了执行一个特定的任务，有了输入，用户才能告诉计算机程序所需的信息，有了输出，程序运行后才能告诉用户任务的结果。
-                            根据输入的不同，输出的结果也会不同。
+                        根据输入的不同，输出的结果也会不同。
                     </blockquote>
                     <p>输入(input)与输出(output)被统称为input/output(IO)。
                         <code>print()</code>与 <code>input()</code> 是在命令行下进行最基本的输入和输出。
                     </p>
                     <h4>输出 Output</h4>
-                    <pre><code class="language-python">print(&#39;hello, world!&#39;)
-print(&#39;asas&#39;,&#39;sadfd&#39;,&#39;dfas&#39;)
-# output: asas sadfd dfas
-print(300)
-print(100 + 200) 
-print(&quot;100 + 200 =&quot;, 100 + 200)
-# output: 100 + 200 = 300
-</code></pre>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=zenburn&wt=none&l=python&width=800&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=10px&ph=18px&ln=true&fl=1&fm=Hack&fs=14px&lh=147%25&si=false&es=2x&wm=false&code=print%28%27hello%252C%2520world%21%27%29%250Aprint%28%27asas%27%252C%27sadfd%27%252C%27dfas%27%29%250A%2523%2520out%253A%2520asas%2520sadfd%2520dfas%250Aprint%28300%29%250Aprint%28100%2520%252B%2520200%29%2520%250Aprint%28%2522100%2520%252B%2520200%2520%253D%2522%252C%2520100%2520%252B%2520200%29%250A%2523%2520out%253A%2520100%2520%252B%2520200%2520%253D%2520300"
+                        style="width: 800px; height: 224px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
                     <ul>
                         <li><code>print()</code> 表示在屏幕上输出指定的文字，但它并不会自动换行</li>
                         <li><code>&#39;xx&#39;</code>与 <code>&#39;&#39;xx&#39;&#39;</code> 都可以用来表示字符串</li>
@@ -92,20 +90,19 @@ print(&quot;100 + 200 =&quot;, 100 + 200)
                             </p>
                         </li>
                     </ul>
-                    <pre><code class="language-python">name = input() # 将input()存放到一个变量中，且打下这行代码且按下回车后，对本文件进行运行，便可在终端中进行输入了
-print(name) # 调用name这个变量，进行输出
-# input: sean
-# output: sean
-</code></pre>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=zenburn&wt=none&l=python&width=800&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=10px&ph=18px&ln=true&fl=1&fm=Hack&fs=14px&lh=147%25&si=false&es=2x&wm=false&code=name%2520%253D%2520input%28%29%2520%2523%2520%25E5%25B0%2586input%28%29%25E5%25AD%2598%25E6%2594%25BE%25E5%2588%25B0%25E4%25B8%2580%25E4%25B8%25AA%25E5%258F%2598%25E9%2587%258F%25E4%25B8%25AD%25EF%25BC%258C%25E4%25B8%2594%25E6%2589%2593%25E4%25B8%258B%25E8%25BF%2599%25E8%25A1%258C%25E4%25BB%25A3%25E7%25A0%2581%25E4%25B8%2594%25E6%258C%2589%25E4%25B8%258B%25E5%259B%259E%25E8%25BD%25A6%25E5%2590%258E%25EF%25BC%258C%25E5%25AF%25B9%25E6%259C%25AC%25E6%2596%2587%25E4%25BB%25B6%25E8%25BF%259B%25E8%25A1%258C%25E8%25BF%2590%25E8%25A1%258C%25EF%25BC%258C%25E4%25BE%25BF%25E5%258F%25AF%25E5%259C%25A8%25E7%25BB%2588%25E7%25AB%25AF%25E4%25B8%25AD%25E8%25BF%259B%25E8%25A1%258C%25E8%25BE%2593%25E5%2585%25A5%25E4%25BA%2586%250Aprint%28name%29%2520%2523%2520%25E8%25B0%2583%25E7%2594%25A8name%25E8%25BF%2599%25E4%25B8%25AA%25E5%258F%2598%25E9%2587%258F%25EF%25BC%258C%25E8%25BF%259B%25E8%25A1%258C%25E8%25BE%2593%25E5%2587%25BA%250A%2523%2520in%253A%2520sean%250A%2523%2520out%253A%2520sean"
+                        style="width: 800px; height: 182px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
 
                     <h2>语法组织 Syntax</h2>
                     <p>如：</p>
-                    <pre><code class="language-python">num = 10
-if a &gt;= 10:
-    print(a)
-else:
-    print(-a)
-</code></pre>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=zenburn&wt=none&l=python&width=800&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=10px&ph=18px&ln=true&fl=1&fm=Hack&fs=14px&lh=147%25&si=false&es=2x&wm=false&code=num%2520%253D%252010%250Aif%2520a%2520%253E%253D%252010%253A%250A%2520%2520%2520%2520print%28a%29%250Aelse%253A%250A%2520%2520%2520%2520print%28-a%29"
+                        style="width: 800px; height: 182px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
                     <ul>
                         <li>python使用缩进来组织代码块。<ul>
                                 <li>关于缩进
@@ -124,11 +121,11 @@ else:
                     </ul>
 
                     <h2>注释 Comment</h2>
-                    <pre><code class="language-python"># 我们使用#来进行单行注释
-&quot;&quot;&quot;
-同时可以上下同时使用三个&quot;来进行多行注释
-&quot;&quot;&quot;
-</code></pre>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=zenburn&wt=none&l=python&width=800&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=10px&ph=18px&ln=true&fl=1&fm=Hack&fs=14px&lh=147%25&si=false&es=2x&wm=false&code=%2523%2520%25E6%2588%2591%25E4%25BB%25AC%25E4%25BD%25BF%25E7%2594%25A8%2523%25E6%259D%25A5%25E8%25BF%259B%25E8%25A1%258C%25E5%258D%2595%25E8%25A1%258C%25E6%25B3%25A8%25E9%2587%258A%250A%2522%2522%2522%250A%25E5%2590%258C%25E6%2597%25B6%25E5%258F%25AF%25E4%25BB%25A5%25E4%25B8%258A%25E4%25B8%258B%25E5%2590%258C%25E6%2597%25B6%25E4%25BD%25BF%25E7%2594%25A8%25E4%25B8%2589%25E4%25B8%25AA%2522%25E6%259D%25A5%25E8%25BF%259B%25E8%25A1%258C%25E5%25A4%259A%25E8%25A1%258C%25E6%25B3%25A8%25E9%2587%258A%250A%2522%2522%2522"
+                        style="width: 800px; height: 162px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
                     <ul>
                         <li>作用<ol>
                                 <li>解释python代码</li>
@@ -206,10 +203,10 @@ else:
                             <a href="nbPython.html" class="image"><img src="images/pic01_1.jpg" alt="pic01_1" /></a>
                             <p>python基础语法知识及数据分析常用库知识笔记。</p>
                         </article>
-						<article>
-							<a href="nbJava.html" class="image"><img src="images/pic08_1.jpg" alt="pic08_1" /></a>
-							<p>Java笔记。</p>
-						</article>
+                        <article>
+                            <a href="nbJava.html" class="image"><img src="images/pic08_1.jpg" alt="pic08_1" /></a>
+                            <p>Java笔记。</p>
+                        </article>
                     </div>
                     <ul class="actions">
                         <li><a href="#" class="button">Find More</a></li>
