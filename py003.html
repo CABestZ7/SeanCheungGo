@@ -63,11 +63,9 @@
                     <blockquote>
                         python是一种动态语言，即一种变量本身类型不固定，相应的是静态语言，即在定义变量时需同时指定变量类型
                     </blockquote>
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=zenburn&wt=none&l=python&width=800&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=10px&ph=18px&ln=true&fl=1&fm=Hack&fs=14px&lh=147%25&si=false&es=2x&wm=false&code=x%2520%253D%2520%27beautiful%27%250Ay%2520%253D%2520%27good%27"
-                        style="width: 800px; height: 121px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
+                    <span class="image fit">
+                        <img src="images/nbPython/例 3.1.png">
+                    </span>
                     <blockquote>
                         <code>=</code> 与 <code>==</code> 是不同的，前者是赋值语句，后者是等值判断。
                     </blockquote>
@@ -88,11 +86,9 @@
                         </li>
                     </ul>
                     <h4>多变量赋值</h4>
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=zenburn&wt=none&l=python&width=800&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=10px&ph=18px&ln=true&fl=1&fm=Hack&fs=14px&lh=147%25&si=false&es=2x&wm=false&code=x%252C%2520y%252C%2520z%2520%253D%2520%2522A%2522%252C%2520%2522B%2522%252C%2520%2522C%2522%250A%2523%2520%25E4%25BB%25A5%25E4%25B8%258A%25E4%25B8%25BA%25E5%25A4%259A%25E5%258F%2598%25E9%2587%258F%25E8%25B5%258B%25E4%25B8%258D%25E5%2590%258C%25E5%2580%25BC%2520Many%2520Values%2520to%2520Multiple%2520Variables%250A%2523%2520%25E6%258C%2589%25E7%2585%25A7%25E9%25A1%25BA%25E5%25BA%258F%25E8%25BF%259B%25E8%25A1%258C%25E5%25A4%259A%25E5%258F%2598%25E9%2587%258F%25E8%25B5%258B%25E5%2580%25BC%250Ax%252C%2520y%252C%2520z%2520%253D%2520%2522A%2522%250A%2523%2520%25E4%25BB%25A5%25E4%25B8%258A%25E4%25B8%25BA%25E5%25A4%259A%25E5%258F%2598%25E9%2587%258F%25E8%25B5%258B%25E5%258D%2595%25E4%25B8%2580%25E5%2580%25BC%2520One%2520Value%2520to%2520Multiple%2520Variables%250Afruits%2520%253D%2520%255B%27a%27%252C%27b%27%252C%27c%27%255D%250Ax%252C%2520y%252C%2520z%2520%253D%2520fruits%250A%2523%2520%25E4%25BB%25A5%25E4%25B8%258A%25E6%2598%25AF%25E9%2592%2588%25E5%25AF%25B9%25E5%2588%2597%25E8%25A1%25A8%25E3%2580%2581%25E5%2585%2583%25E7%25BB%2584%25E8%25BF%259B%25E8%25A1%258C%25E8%25A7%25A3%25E5%258C%2585%25E5%2588%2586%25E6%259E%2590"
-                        style="width: 800px; height: 244px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
+                    <span class="image fit">
+                        <img src="images/nbPython/例 3.2.png">
+                    </span>
                     <h4>将变量赋值给变量</h4>
                     <p>此处需要理解变量在内存之中的表示，如 <code>x = &quot;apple&quot;</code>，此处python解释器干了两件事：</p>
                     <ol>
@@ -100,11 +96,9 @@
                         <li>在内存中创建一个名为 <code>x</code> 的变量，并将它指向 <code>apple</code>
                             而当将变量赋值给变量时：</li>
                     </ol>
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=zenburn&wt=none&l=python&width=800&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=10px&ph=18px&ln=true&fl=1&fm=Hack&fs=14px&lh=147%25&si=false&es=2x&wm=false&code=a%2520%253D%2520%27A%27%250Ab%2520%253D%2520a%250Aa%2520%253D%2520%27APPLE%27%250Aprint%28b%29%2520%2523%2520out%253A%2520%27A%27"
-                        style="width: 800px; height: 162px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
+                    <span class="image fit">
+                        <img src="images/nbPython/例 3.3.png">
+                    </span>
                     <p>为什么此处的输出是A呢？</p>
                     <ol>
                         <li>执行line1时，解释器创建字符串 <code>&#39;A&#39;</code> 和变量 <code>a</code> ，并将 <code>a</code> 指向
@@ -129,47 +123,37 @@
                                 倘如在内部创建一个与全局变量同名的变量，全局变量在该函数内的值将被覆盖。</p>
                         </li>
                     </ul>
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=zenburn&wt=none&l=python&width=800&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=10px&ph=18px&ln=true&fl=1&fm=Hack&fs=14px&lh=147%25&si=false&es=2x&wm=false&code=x%252C%2520y%2520%253D%2520%2522apple%2522%250Aprint%28x%252C%2520y%29%2520%2523%2520out%253A%2520apple%2520apple%250Adef%2520newFunc%28%29%253A%250A%2520%2520%2520%2520x%2520%253D%2520%2522peach%2522%250A%2520%2520%2520%2520print%28x%29%250AnewFunc%28%29%2520%2523%2520out%253A%2520peach%250Aprint%28x%29%2520%2523%2520out%253A%2520apple%250Adef%2520secFunc%28%29%253A%250A%2520%2520%2520%2520global%2520y%250A%2520%2520%2520%2520y%2520%253D%2520%2522banana%2522%250AsecFunc%28%29%250Aprint%28y%29%2520%2523%2520out%253A%2520banana"
-                        style="width: 800px; height: 326px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
+                    <span class="image fit">
+                        <img src="images/nbPython/例 3.4.png">
+                    </span>
                     <h2>获取变量类型 Get the Type</h2>
                     <p>使用 <code>type()</code> 方法</p>
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=zenburn&wt=none&l=python&width=800&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=10px&ph=18px&ln=true&fl=1&fm=Hack&fs=14px&lh=147%25&si=false&es=2x&wm=false&code=x%2520%253D%25201%250Aprint%28type%28x%29%29%2520%2523%2520out%253A%2520int"
-                        style="width: 800px; height: 121px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
+                    <span class="image fit">
+                        <img src="images/nbPython/例 3.5.png">
+                    </span>
                     <h2>Casting</h2>
                     <p>当需要为变量指定类型时，可以通过casting来完成，casting时使用构造函数来完成转换：</p>
                     <ul>
                         <li><code>int()</code>
                             用整数字面量、浮点字面量构造整数（通过对数进行下舍入），或者用表示完整数字的字符串字面量</li>
                     </ul>
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=zenburn&wt=none&l=python&width=800&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=10px&ph=18px&ln=true&fl=1&fm=Hack&fs=14px&lh=147%25&si=false&es=2x&wm=false&code=x%2520%253D%2520int%281%29%2520%2523%2520x%2520%253D%253D%25201%250Ay%2520%253D%2520int%282.8%29%2520%2523%2520y%2520%253D%253D%25202%250Az%2520%253D%2520int%28%25223%2522%29%2520%2523%2520z%2520%253D%253D%25203"
-                        style="width: 800px; height: 141px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
+                    <span class="image fit">
+                        <img src="images/nbPython/例 3.6.png">
+                    </span>
                     <ul>
                         <li><code>float()</code>
                             用整数字面量、浮点字面量，或字符串字面量构造浮点数（提供表示浮点数或整数的字符串）</li>
                     </ul>
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=zenburn&wt=none&l=python&width=800&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=10px&ph=18px&ln=true&fl=1&fm=Hack&fs=14px&lh=147%25&si=false&es=2x&wm=false&code=x%2520%253D%2520float%281%29%2520%2523%2520x%2520%253D%253D%25201.0%250Ay%2520%253D%2520float%281.5%29%2520%2523%2520y%2520%253D%253D%25201.5%250Az%2520%253D%2520float%28%25223%2522%29%2520%2523%2520z%2520%253D%253D%25203.0"
-                        style="width: 800px; height: 141px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>f
+                    <span class="image fit">
+                        <img src="images/nbPython/例 3.7.png">
+                    </span>
                     <ul>
                         <li><code>str()</code>
                             用各种数据类型构造字符串，包括字符串，整数字面量和浮点字面量</li>
                     </ul>
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=zenburn&wt=none&l=python&width=800&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=10px&ph=18px&ln=true&fl=1&fm=Hack&fs=14px&lh=147%25&si=false&es=2x&wm=false&code=x%2520%253D%2520str%28%2522s1%2522%29%2520%2523%2520x%2520%253D%253D%2520%2522s1%2522%250Ay%2520%253D%2520str%282%29%2520%2523%2520y%2520%253D%253D%2520%25222%2522%250Az%2520%253D%2520str%283.0%29%2520%2523%2520z%2520%253D%253D%2520%25223.0%2522"
-                        style="width: 800px; height: 141px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
+                    <span class="image fit">
+                        <img src="images/nbPython/例 3.8.png">
+                    </span>
                     <h2>常量 Constants</h2>
                     <p>常量实际上也是一种变量，创建一个变量，将变量指向一个固定的不再需要更改的数据值，即常量。
                         <br /><strong>常量常命名为全大写</strong>，如 <code>PI = 3.1415926</code>
